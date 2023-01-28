@@ -8,7 +8,6 @@ class Config:
     Session = os.environ.get("Session_String")
     if Session is None or Session == "":
         Session = ":memory:"
-    App_Name = os.environ.get("APP_NAME")
     Port = int(os.environ.get("PORT"))
     Archive_Channel_ID = int(os.environ.get("ARCHIVE_CHANNEL_ID"))
     Start_Message = os.environ.get("Start_Message")
@@ -18,7 +17,7 @@ class Config:
     elif Bot_Channel == "":
         Bot_Channel = None
 
-    Link_Root = f"https://{App_Name}.herokuapp.com/"
+    Link_Root = f"https://filetolinkdh5a.eu-ffaqrvbjixds.dopraxrocks.net"
     Download_Folder = "Files"
     Dev_Channel = "shadow_bots"
     Bot_UserName = None  # The bot will set it after starting
